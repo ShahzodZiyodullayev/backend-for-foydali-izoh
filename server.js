@@ -12,6 +12,8 @@ mongoose.connect(process.env.DATABASE_LOCAL, () =>
   console.log("DB connection succesfully"),
 );
 
+// app.use("/", require)
+
 app.get("/ok", (req, res) => {
   res.send(JSONData);
 });
